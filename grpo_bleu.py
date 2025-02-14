@@ -148,9 +148,9 @@ def bleu_reward_func(prompts, completions, **kwargs) -> list[float]:
     responses = []
     for completion in completions:
         if isinstance(completion, list):
-            response = completion[0]['content'].replace("[ASSISTANT]",'')
+            response = completion[0]['content'].replace("[/ASSISTANT]",'')
         else:
-            response = completion['content'].replace("[ASSISTANT]",'')
+            response = completion['content'].replace("[/ASSISTANT]",'')
         if isinstance(response, list):
             response = ' '.join(response)  # 如果response是list，将其连接成字符串
         responses.append(response)
