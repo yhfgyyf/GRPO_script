@@ -15,5 +15,5 @@ trl==0.14.0
 
 模型目录需要替换
 
-grpo_bleu.py 用于训练粤语，并按照指定格式[ASSISTANT]输出
+grpo_bleu.py 用于训练粤语，并按照指定格式[ASSISTANT]输出，使用了格式奖励和bleu-4指标奖励
 
